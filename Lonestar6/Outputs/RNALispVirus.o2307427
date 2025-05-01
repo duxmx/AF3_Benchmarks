@@ -1,0 +1,54 @@
+Starting at: 
+Fri Apr  4 13:47:16 CDT 2025
+
+Running AlphaFold 3. Please note that standard AlphaFold 3 model parameters are
+only available under terms of use provided at
+https://github.com/google-deepmind/alphafold3/blob/main/WEIGHTS_TERMS_OF_USE.md.
+If you do not agree to these terms and are using AlphaFold 3 derived model
+parameters, cancel execution of AlphaFold 3 inference with CTRL-C, and do not
+use the model parameters.
+
+Found local devices: [CudaDevice(id=0), CudaDevice(id=1), CudaDevice(id=2)], using device 0: cuda:0
+Building model from scratch...
+Checking that model parameters can be loaded...
+
+Running fold job Protein_RNA_lispvirus...
+Output will be written in /root/af_output/protein_rna_lispvirus_20250404_134800 since /root/af_output/protein_rna_lispvirus is non-empty.
+Running data pipeline...
+Processing chain A
+Processing chain A took 1254.40 seconds
+Writing model input JSON to /root/af_output/protein_rna_lispvirus_20250404_134800/protein_rna_lispvirus_data.json
+Predicting 3D structure for Protein_RNA_lispvirus with 1 seed(s)...
+Featurising data with 1 seed(s)...
+Featurising Protein_RNA_lispvirus with rng_seed 1.
+Featurising Protein_RNA_lispvirus with rng_seed 1 took 21.71 seconds.
+Featurising data with 1 seed(s) took 26.30 seconds.
+Running model inference and extracting output structure samples with 1 seed(s)...
+Running model inference with seed 1...
+Running model inference with seed 1 took 359.64 seconds.
+Extracting output structure samples with seed 1...
+Extracting 5 output structure samples with seed 1 took 5.06 seconds.
+Running model inference and extracting output structures with 1 seed(s) took 364.69 seconds.
+Writing outputs with 1 seed(s)...
+Fold job Protein_RNA_lispvirus done, output written to /root/af_output/protein_rna_lispvirus_20250404_134800
+
+Done running 1 fold jobs.
+
+
+=============================== REMORA SUMMARY ===============================
+ Max Virtual  Memory Per Node :   114.09 GB
+ Max Physical Memory Per Node :     7.45 GB
+ Available Memory at time 0.0 :   238.55 GB
+ Max GPU      Memory Per Card :    38.85 MB
+ Avail GPU Card Mem at Time 0 : 40960.00 MB
+ Total Elapsed Time           :  0d 0h 28m 32s 914ms
+------------------------------------------------------------------------------
+ Max IO Load / work           :       0 IOPS       0 RD(MB/S)       0 WR(MB/S)
+==============================================================================
+ Sampling Period              : 10 seconds
+ Report Directory             : R=/scratch/10511/madduxmaddux/AF3_TESTING/512_full_a100/remora_2307427
+ Google Plots HTML Index Page : $R/remora_summary.html
+==============================================================================
+
+Ending at: 
+Fri Apr  4 14:16:57 CDT 2025
